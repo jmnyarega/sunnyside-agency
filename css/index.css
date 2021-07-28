@@ -72,8 +72,8 @@ img:not([alt]) {
 
 body {
   min-height: 100vh;
-  font-family: 'Barlow', sans-serif;
-  font-family: 'Fraunces', serif;
+  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
   font-size: 1.25rem; }
 
 .container {
@@ -228,9 +228,12 @@ body {
   .footer__social {
     display: flex;
     justify-content: center;
-    column-gap: 2.5rem;
+    column-gap: 1.75rem;
     padding: 0;
     color: #2C7566; }
+    .footer__social span {
+      height: 1.25rem;
+      width: 1.25rem; }
 
 .btn-link {
   font-size: 15px;
