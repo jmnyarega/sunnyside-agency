@@ -1,0 +1,256 @@
+/*----------------------------
+RESET: START
+------------------------------*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0; }
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0; }
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth; }
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5; }
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto; }
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block; }
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em; }
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit; }
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(10px); }
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+body {
+  min-height: 100vh;
+  font-family: 'Barlow', sans-serif;
+  font-family: 'Fraunces', serif;
+  font-size: 1.25rem; }
+
+.container {
+  max-width: 120em;
+  width: 90%;
+  margin-inline: auto; }
+
+.top {
+  background: no-repeat url(../images/mobile/image-header.jpg);
+  background-size: cover;
+  min-height: 33.625rem; }
+  .top header {
+    padding-top: 1.875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .top .hero {
+    margin-top: 5.875rem;
+    text-align: center;
+    color: white; }
+    .top .hero h1 {
+      font-size: 2.5rem;
+      text-transform: uppercase; }
+    .top .hero img {
+      margin-top: 1.5rem;
+      margin-inline: auto; }
+
+.intro {
+  text-align: center; }
+  .intro__content {
+    margin-block: 4.4375rem; }
+  .intro__title {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 2rem; }
+  .intro__text {
+    font-family: "Barlow", Serif;
+    color: #808397;
+    font-size: 1.125rem;
+    font-weight: normal;
+    margin-bottom: 2rem; }
+
+.stand-out {
+  text-align: center; }
+  .stand-out__content {
+    margin-block: 4.4375rem; }
+  .stand-out__title {
+    font-size: 2rem;
+    line-height: 1.2;
+    margin-bottom: 2rem; }
+  .stand-out__text {
+    font-family: "Barlow", Serif;
+    color: #808397;
+    font-size: 1.125rem;
+    font-weight: normal;
+    margin-bottom: 2rem; }
+
+.graphic-design {
+  background: no-repeat url(../images/mobile/image-graphic-design.jpg);
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+  text-align: center; }
+  .graphic-design__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4rem; }
+  .graphic-design__title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem; }
+  .graphic-design__text {
+    font-family: "Barlow", Serif;
+    color: #24554A;
+    font-size: 1rem;
+    font-weight: normal; }
+
+.photography {
+  background: no-repeat url(../images/mobile/image-photography.jpg);
+  background-size: cover;
+  min-height: 600px;
+  position: relative;
+  text-align: center; }
+  .photography__content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 4rem; }
+  .photography__title {
+    font-size: 1.75rem;
+    margin-bottom: 2rem;
+    color: #19536C;
+    text-transform: capitalize; }
+  .photography__text {
+    font-family: "Barlow", Serif;
+    color: #19536C;
+    font-size: 1rem;
+    font-weight: normal; }
+
+.testimonials {
+  margin-top: 4rem;
+  text-align: center; }
+  .testimonials__title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #A7AAAD; }
+  .testimonials ul {
+    list-style: none;
+    padding: 0; }
+    .testimonials ul li {
+      margin-top: 4rem; }
+  .testimonials img {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 50%;
+    margin-inline: auto;
+    margin-bottom: 2.5rem; }
+  .testimonials p {
+    font-family: "Barlow", Serif;
+    color: #5B636D;
+    font-size: 1.125rem;
+    font-weight: normal; }
+  .testimonials .person {
+    margin-top: 2.5rem; }
+    .testimonials .person__position {
+      font-size: 0.875rem;
+      color: #A7AAAD; }
+
+.gallery {
+  margin-top: 5.375rem;
+  display: grid;
+  grid-template-areas: "a b" "c d"; }
+
+.footer {
+  padding-block: 4rem;
+  background-color: #90D4C6; }
+  .footer img {
+    margin-inline: auto;
+    margin-bottom: 2.8125rem; }
+  .footer ul {
+    list-style: none; }
+  .footer a, .footer i {
+    text-decoration: none;
+    color: #458D7E;
+    font-size: 1.125rem;
+    font-family: "Barlow", Serif; }
+  .footer__links ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    padding-bottom: 5.8125rem; }
+  .footer__social {
+    display: flex;
+    justify-content: center;
+    column-gap: 2.5rem;
+    padding: 0;
+    color: #2C7566; }
+
+.btn-link {
+  font-size: 15px;
+  padding-inline: 0.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #24303E;
+  font-weight: 900;
+  position: relative; }
+  .btn-link::after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    background-color: black;
+    bottom: -0.1rem;
+    opacity: 0.25;
+    border-radius: 99em;
+    left: 0;
+    right: 0; }
+  .btn-link--yellow::after {
+    background-color: #FAD400; }
+  .btn-link--pink::after {
+    background-color: #FE7766; }
