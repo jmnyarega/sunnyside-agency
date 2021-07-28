@@ -36,7 +36,7 @@
 }
 .intro__text {
   font-family: "Barlow", Serif;
-  color: #818498;
+  color: #808397;
   font-size: 1.125rem;
   font-weight: normal;
   margin-bottom: 2rem;
@@ -57,10 +57,10 @@
   text-transform: capitalize;
 }
 .services__title--graphic-design {
-  color: #25564b;
+  color: #24554A;
 }
 .services__title--photography {
-  color: #052d3d;
+  color: #052C3B;
 }
 .services__text {
   font-family: "Barlow", Serif;
@@ -68,10 +68,10 @@
   font-weight: normal;
 }
 .services__text--graphic-design {
-  color: #25564b;
+  color: #24554A;
 }
 .services__text--photography {
-  color: #19536b;
+  color: #19536C;
 }
 .services--graphic-design {
   background: no-repeat url(../images/mobile/image-graphic-design.jpg);
@@ -93,7 +93,7 @@
 .testimonial__title {
   text-transform: uppercase;
   font-size: 1rem;
-  color: #a7abae;
+  color: #A7AAAD;
 }
 .testimonial__item {
   margin-top: 4rem;
@@ -107,7 +107,7 @@
 }
 .testimonial__text {
   font-family: "Barlow", Serif;
-  color: #19536b;
+  color: #4B636D;
   font-size: 1.125rem;
   font-weight: normal;
 }
@@ -115,12 +115,9 @@
 .user {
   margin-top: 2.5rem;
 }
-.user__name {
-  color: #23303e;
-}
 .user__position {
   font-size: 0.875rem;
-  color: #a7abae;
+  color: #A7AAAD;
 }
 
 .gallery {
@@ -131,7 +128,7 @@
 
 .footer {
   padding-block: 4rem 5rem;
-  background-color: #91d4c7;
+  background-color: #90D4C6;
 }
 .footer img {
   margin-inline: auto;
@@ -144,7 +141,7 @@
 }
 .footer a, .footer i {
   text-decoration: none;
-  color: #458c7e;
+  color: #458D7E;
   font-size: 1.125rem;
   font-family: "Barlow", Serif;
 }
@@ -158,7 +155,7 @@
   justify-content: center;
   column-gap: 1.75rem;
   padding: 0;
-  color: #25564b;
+  color: #2C7566;
 }
 .footer__social span {
   height: 1.25rem;
@@ -174,7 +171,7 @@
   padding-inline: 0.5rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: #23303e;
+  color: #24303E;
   font-weight: 900;
   position: relative;
 }
@@ -190,10 +187,10 @@
   right: 0;
 }
 .btn-link--yellow::after {
-  background-color: #fad400;
+  background-color: #FAD400;
 }
 .btn-link--pink::after {
-  background-color: #fe7867;
+  background-color: #FE7766;
 }
 
 /*----------------------------

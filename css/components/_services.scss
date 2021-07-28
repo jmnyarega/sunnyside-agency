@@ -1,0 +1,54 @@
+@use 'abstract';
+
+.services {
+    text-align: center;
+
+    &__content {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 4rem;
+    }
+
+    &__title {
+        font-size: 1.75rem;
+        margin-bottom: 2.125rem;
+        text-transform: capitalize;
+
+        &--graphic-design {
+            color: abstract.$dark-desaturated-cyan;
+        }
+
+        &--photography {
+            color: abstract.$very-dark-blue;
+        }
+    }
+
+    &__text {
+        font-family: "Barlow", Serif;
+        font-size: 1rem;
+        font-weight: normal;
+
+        &--graphic-design {
+            color: abstract.$dark-desaturated-cyan;
+        }
+
+        &--photography {
+            color: abstract.$dark-blue;
+        }
+    }
+
+    &--graphic-design {
+        background: no-repeat url(../images/mobile/image-graphic-design.jpg);
+        background-size: cover;
+        min-height: 37.5rem;
+        position: relative;
+    }
+
+    &--photography {
+        background: no-repeat url(../images/mobile/image-photography.jpg);
+        background-size: cover;
+        min-height: 37.5rem;
+        position: relative;
+    }
+}

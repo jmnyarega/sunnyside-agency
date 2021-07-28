@@ -1,0 +1,19 @@
+@use 'abstract';
+@use "reset";
+
+body {
+    min-height: 100vh;
+    font-size: 1.25rem;
+    font-family: abstract.$ff-default;
+    font-family: abstract.$ff-alt;
+}
+
+.container {
+    max-width: 120em;
+    width: 90%;
+    margin-inline: auto;
+}
+
+a:hover {
+    opacity: 0.7;
+}

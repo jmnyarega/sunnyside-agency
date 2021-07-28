@@ -1,0 +1,22 @@
+@use 'abstract';
+
+.intro {
+    text-align: center;
+    &__content {
+        margin-block: 4.4375rem 4rem;
+    }
+
+    &__title {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+        font-family: "Barlow", Serif;
+        color: abstract.$dark-grayish-blue;
+        font-size: 1.125rem;
+        font-weight: normal;
+        margin-bottom: 2rem;
+    }
+}

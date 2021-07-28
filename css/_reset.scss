@@ -12,8 +12,11 @@ RESET: START
 
 /* Remove default padding */
 ul[class],
+ul,
+ol,
 ol[class] {
     padding: 0;
+    list-style: none;
 }
 
 /* Remove default margin */

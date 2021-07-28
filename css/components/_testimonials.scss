@@ -1,0 +1,43 @@
+@use 'abstract';
+
+.testimonial {
+    margin-block: 4rem 5rem;
+    text-align: center;
+
+    &__title {
+        text-transform: uppercase;
+        font-size: 1rem;
+        color: abstract.$grayish-blue;
+    }
+    &__item {
+        margin-top: 4rem;
+    }
+
+    &__img {
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 49%;
+        margin-inline: auto;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        font-family: "Barlow", Serif;
+        color: abstract.$dark-blue;
+        font-size: 1.125rem;
+        font-weight: normal;
+    }
+}
+
+.user {
+    margin-top: 2.5rem;
+
+    &__name {
+        color: abstract.$very-dark-desaturated-blue;
+    }
+
+    &__position {
+        font-size: 0.875rem;
+        color: abstract.$grayish-blue;
+    }
+}
