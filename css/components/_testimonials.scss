@@ -26,6 +26,16 @@
         color: abstract.$dark-blue;
         font-size: 1.125rem;
         font-weight: normal;
+        max-width: 40ch;
+        margin-inline: auto;
+    }
+
+    &__items {
+        @media (min-width: 50em) {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 2.875rem;
+        }
     }
 }
 

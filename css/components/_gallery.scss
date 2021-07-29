@@ -3,4 +3,12 @@
     display: grid;
     grid-template-areas: "a b"
                           "c d";
+
+    img {
+        width: 100%;
+        object-fit: cover;
+    }
+    @media (min-width: 50em) {
+       grid-template-areas: "a b c d";
+    }
 }

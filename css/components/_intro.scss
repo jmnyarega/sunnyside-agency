@@ -2,21 +2,60 @@
 
 .intro {
     text-align: center;
+
+    @media (min-width: 50em) {
+        text-align: initial;
+    }
     &__content {
         margin-block: 4.4375rem 4rem;
+        max-width: 40ch;
+        margin-inline: auto;
+        @media (min-width: 50em) {
+            margin-block: 4.4375rem 0;
+        }
+    }
+
+    &__content--transform {
+        grid-area: b;
     }
 
     &__title {
-        font-size: 2rem;
         line-height: 1.2;
         margin-bottom: 2rem;
+        font-size: 2rem;
+        @media (min-width: 50em) {
+            font-size: 1.5rem;
+        }
+        @media (min-width: 70em) {
+            font-size: 2rem;
+        }
     }
 
     &__text {
         font-family: "Barlow", Serif;
         color: abstract.$dark-grayish-blue;
-        font-size: 1.125rem;
         font-weight: normal;
         margin-bottom: 2rem;
+        font-size: 1.125rem;
+        @media (min-width: 50em) {
+            font-size: 1rem;
+        }
+        @media (min-width: 68em) {
+            font-size: 1.125rem;
+        }
+    }
+
+    &__img {
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    @media (min-width: 50em) {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "b a" "c d";
     }
 }

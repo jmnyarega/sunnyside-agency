@@ -28,6 +28,8 @@
         font-family: "Barlow", Serif;
         font-size: 1rem;
         font-weight: normal;
+        max-width: 45ch;
+        margin-inline: auto;
 
         &--graphic-design {
             color: abstract.$dark-desaturated-cyan;
@@ -41,14 +43,50 @@
     &--graphic-design {
         background: no-repeat url(../images/mobile/image-graphic-design.jpg);
         background-size: cover;
+        background-position: top center;
+
         min-height: 37.5rem;
         position: relative;
+
+        @media (min-width: 30em) {
+            min-height: 45rem;
+        }
+
+        @media (min-width: 40em) {
+            min-height: 50rem;
+        }
+
+        @media (min-width: 45em) {
+            background-repeat: no-repeat;
+            background-image: url(../images/desktop/image-graphic-design.jpg);
+            background-position: top center;
+        }
     }
 
     &--photography {
         background: no-repeat url(../images/mobile/image-photography.jpg);
+        background-position: top center;
         background-size: cover;
         min-height: 37.5rem;
         position: relative;
+
+        @media (min-width: 30em) {
+            min-height: 45rem;
+        }
+
+        @media (min-width: 40em) {
+            min-height: 50rem;
+        }
+
+        @media (min-width: 45em) {
+            background-image: url(../images/desktop/image-photography.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+
+    @media (min-width: 45em) {
+        display: grid;
+        grid-template-columns: auto auto;
     }
 }
