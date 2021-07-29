@@ -1,7 +1,7 @@
 @use 'abstract';
 
 .footer {
-    padding-block: 4rem 5rem;
+    padding-block: 4rem;
     background-color: abstract.$moderate-cyan;
 
     img {
@@ -9,18 +9,23 @@
         margin-bottom: 2.8125rem;
     }
 
-    a, i {
-        text-decoration: none;
-        color: abstract.$dark-moderate-cyan;
-        font-size: 1.125rem;
-        font-family: "Barlow", Serif;
-    }
-
-    &__links ul {
+    &__links, ul {
         display: flex;
         justify-content: center;
         column-gap: 3rem;
-        padding-bottom: 5.8125rem;
+        margin-bottom: 5.375rem;
+        a {
+            color: abstract.$dark-moderate-cyan;
+            text-decoration: 1px underline dotted;
+            outline: none;
+            font-size: 1.125rem;
+            font-family: "Barlow", Serif;
+            transition: all 200ms linear;
+
+            &:hover, &:focus {
+                color: abstract.$white;
+            }
+        }
     }
 
     &__social {
@@ -30,13 +35,16 @@
         padding: 0;
         color: abstract.$dark-desaturated-cyan;
 
-        span {
-            height: 1.25rem;
+        a {
+            text-decoration: none;
+            outline: none;
             width: 1.25rem;
             cursor: pointer;
+            transition: all 200ms linear;
+            color: abstract.$dark-moderate-cyan;
 
-            &:hover {
-                opacity: 0.7;
+            &:hover, &:focus {
+                color: abstract.$white;
             }
         }
     }

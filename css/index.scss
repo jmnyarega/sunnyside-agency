@@ -1,3 +1,8 @@
+// global
+@use "reset";
+@use "global";
+
+// components
 @use "components/hero";
 @use "components/intro";
 @use "components/services";
@@ -5,4 +10,5 @@
 @use "components/gallery";
 @use "components/footer";
 @use "components/button";
-@use "global";
+@use "components/mobile-nav";
+@use "components/desktop-nav";

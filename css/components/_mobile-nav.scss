@@ -1,0 +1,73 @@
+@use 'abstract';
+
+.hamburger {
+  cursor: pointer;
+  @media (max-width: 45em) {
+    display: block;
+  }
+}
+
+input {
+  display: none;
+}
+
+.nav {
+  @media (max-width: 45em) {
+    padding: 2.625rem 2rem;
+    width: 80%;
+    margin-inline: auto;
+    background-color: abstract.$white;
+    position: absolute;
+    top: -20%;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    z-index: -1;
+
+    transition: top 200ms ease-in-out;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2rem;
+      right: 0;
+      border-left: 4rem solid transparent;
+      border-bottom: 4rem solid abstract.$white;
+    }
+
+    &__link {
+      text-decoration: none;
+      text-transform: capitalize;
+      color: abstract.$dark-grayish-blue;
+      font-family: abstract.$ff-default;
+    }
+
+    &__item + &__item {
+      margin-top: 2.625rem;
+    }
+
+    &__item {
+      text-align: center;
+      .button {
+        font-family: abstract.$ff-alt;
+        text-transform: uppercase;
+        background-color: abstract.$white;
+        background-color: abstract.$yellow;
+        color: abstract.$very-dark-desaturated-blue;
+        border-radius: 99em;
+        padding: 0.8em 1.5em;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+#toggle:checked ~ .nav {
+  opacity: 1;
+  z-index: 1;
+  top: 20%;
+}
+
+#toggle:checked + label .hamburger {
+  opacity: 0.6;
+}

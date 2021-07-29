@@ -23,9 +23,28 @@
   </head>
   <body>
     <section class="top">
-      <header class="container">
+      <header>
         <img src="./images/logo.svg" alt="sunnyside - Home" />
-        <img src="./images/icon-hamburger.svg" alt="" />
+        <input type="checkbox" name="" id="toggle" />
+        <label for="toggle">
+          <img src="./images/icon-hamburger.svg" alt="" class="hamburger" />
+        </label>
+        <nav class="nav">
+          <ul class="nav__items">
+            <li class="nav__item">
+              <a class="nav__link" href="#">about</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">services</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">projects</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link button" href="#">contact</a>
+            </li>
+          </ul>
+        </nav>
       </header>
       <div class="hero container">
         <h1>we are creatives</h1>
@@ -36,7 +55,7 @@
       <div class="intro__img">
         <img src="./images/mobile/image-transform.jpg" alt="" />
       </div>
-      <div class="intro__content intro__content--transform container">
+      <div class="intro__content intro__content--transform">
         <h2 class="intro__title">Transform your brand</h2>
         <p class="intro__text">
           We are creatives Transform your brand We are a full-service creative
@@ -52,7 +71,7 @@
       <div class="intro__img">
         <img src="./images/mobile/image-stand-out.jpg" alt="" />
       </div>
-      <div class="intro__content container">
+      <div class="intro__content">
         <h2 class="intro__title">Stand out to the right audience</h2>
         <p class="intro__text">
           Using a collaborative formula of designers, researchers,
@@ -153,19 +172,26 @@
     </div>
     <footer class="footer">
       <img src="./images/logo-dark.svg" alt="footer - logo" />
-      <div class="footer__links">
-        <ul>
-          <li><a href="">About</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">Projects</a></li>
-        </ul>
-      </div>
+      <ul class="footer__links">
+        <li class="footer__link"><a href="">About</a></li>
+        <li class="footer__link"><a href="">Services</a></li>
+        <li class="footer__link"><a href="">Projects</a></li>
+      </ul>
 
       <div class="footer__social container">
-        <span class="fa fa-facebook-square"></span>
-        <span class="fa fa-instagram"></span>
-        <span class="fa fa-twitter"></span>
-        <span class="fa fa-pinterest"></span>
+        <a href="#">
+          <span class="fa fa-facebook-square"></span>
+        </a>
+
+        <a href="#">
+          <span class="fa fa-twitter"></span>
+        </a>
+        <a href="#">
+          <span class="fa fa-instagram"></span>
+        </a>
+        <a href="#">
+          <span class="fa fa-pinterest"></span>
+        </a>
       </div>
     </footer>
   </body>

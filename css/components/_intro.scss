@@ -2,13 +2,15 @@
 
 .intro {
     text-align: center;
+    transition: all 350ms linear;
 
     @media (min-width: 50em) {
         text-align: initial;
     }
     &__content {
         margin-block: 4.4375rem 4rem;
-        max-width: 40ch;
+        max-width: 50ch;
+        width: 80%;
         margin-inline: auto;
         @media (min-width: 50em) {
             margin-block: 4.4375rem 0;
