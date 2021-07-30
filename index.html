@@ -19,7 +19,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/index.css" />
-    <script src="https://use.fontawesome.com/4ac2e5dc4b.js"></script>
+    <link
+      rel="stylesheet"
+      href="node_modules/loading-attribute-polyfill/dist/loading-attribute-polyfill.css"
+    />
   </head>
   <body>
     <section class="top">
@@ -27,7 +30,12 @@
         <img src="./images/logo.svg" alt="sunnyside - Home" />
         <input type="checkbox" name="" id="toggle" />
         <label for="toggle">
-          <img src="./images/icon-hamburger.svg" alt="" class="hamburger" />
+          <img
+            src="./images/icon-hamburger.svg"
+            alt=""
+            class="hamburger"
+            loading="lazy"
+          />
         </label>
         <nav class="nav" aria-labelledby="primary-navigation">
           <ul class="nav__items">
@@ -48,7 +56,7 @@
       </header>
       <div class="hero container">
         <h1 class="hero__title">we are creatives</h1>
-        <img src="./images/icon-arrow-down.svg" alt="" />
+        <img src="./images/icon-arrow-down.svg" alt="" loading="lazy" />
       </div>
     </section>
     <section class="intro intro--transform container">
@@ -56,6 +64,7 @@
         src="./images/mobile/image-transform.jpg"
         alt=""
         class="intro__img"
+        loading="lazy"
       />
       <div class="intro__content intro__content--transform">
         <h2 class="intro__title">Transform your brand</h2>
@@ -74,6 +83,7 @@
         src="./images/mobile/image-stand-out.jpg"
         alt=""
         class="intro__img"
+        loading="lazy"
       />
       <div class="intro__content">
         <h2 class="intro__title">Stand out to the right audience</h2>
@@ -120,6 +130,7 @@
             src="./images/image-emily.jpg"
             alt="Emily"
             class="testimonial__img"
+            loading="lazy"
           />
           <p class="testimonial__text">
             We put our trust in Sunnyside and they delivered, making sure our
@@ -135,6 +146,7 @@
             src="./images/image-thomas.jpg"
             alt="Thomas"
             class="testimonial__img"
+            loading="lazy"
           />
           <p class="testimonial__text">
             Sunnyside’s enthusiasm coupled with their keen interest in our
@@ -150,6 +162,7 @@
             src="./images/image-jennie.jpg"
             alt="Jennie"
             class="testimonial__img"
+            loading="lazy"
           />
           <p class="testimonial__text">
             Incredible end result! Our sales increased over 400% when we worked
@@ -166,16 +179,30 @@
       <img
         src="./images/mobile/image-gallery-milkbottles.jpg"
         alt="milk-bottles"
+        loading="lazy"
+        height="381"
       />
-      <img src="./images/mobile/image-gallery-orange.jpg" alt="orange" />
-      <img src="./images/mobile/image-gallery-cone.jpg" alt="cone" />
+      <img
+        src="./images/mobile/image-gallery-orange.jpg"
+        alt="orange"
+        loading="lazy"
+        height="381"
+      />
+      <img
+        src="./images/mobile/image-gallery-cone.jpg"
+        alt="cone"
+        loading="lazy"
+        height="381"
+      />
       <img
         src="./images/mobile/image-gallery-sugar-cubes.jpg"
         alt="sugar cubes"
+        loading="lazy"
+        height="381"
       />
     </div>
     <footer class="footer">
-      <img src="./images/logo-dark.svg" alt="footer - logo" />
+      <img src="./images/logo-dark.svg" alt="footer - logo" loading="lazy" />
       <nav aria-labelledby="footer-navigation" class="footer-nav">
         <ul class="footer-nav__items">
           <li class="footer-nav__item">
@@ -206,5 +233,10 @@
         </a>
       </div>
     </footer>
+    <script src="https://use.fontawesome.com/4ac2e5dc4b.js"></script>
+    <script
+      src="node_modules/loading-attribute-polyfill/dist/loading-attribute-polyfill.module.js"
+      async
+    ></script>
   </body>
 </html>
