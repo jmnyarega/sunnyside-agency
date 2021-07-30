@@ -1,11 +1,11 @@
 @use 'abstract';
 
 .btn-link {
-  font-size: 15px;
+  font-size: 0.9375rem;
   padding-inline: 0.5rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: abstract.$very-dark-desaturated-blue;
+  color: inherit;
   font-weight: 900;
   position: relative;
   outline: none;
@@ -14,7 +14,6 @@
     content: "";
     position: absolute;
     height: 10px;
-    background-color: abstract.$black;
     bottom: -0.1rem;
     opacity: 0.25;
     z-index: -1;

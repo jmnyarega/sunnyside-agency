@@ -6,15 +6,18 @@
 
     img {
         margin-inline: auto;
-        margin-bottom: 2.8125rem;
+        margin-bottom: 2.5625rem;
     }
 
-    &__links, ul {
-        display: flex;
-        justify-content: center;
-        column-gap: 3rem;
-        margin-bottom: 5.375rem;
-        a {
+    .footer-nav {
+        margin-bottom: 5.5rem;
+        &__items {
+            display: flex;
+            justify-content: center;
+            column-gap: 3rem;
+        }
+
+        &__link {
             color: abstract.$dark-moderate-cyan;
             text-decoration: 1px underline dotted;
             outline: none;
@@ -32,7 +35,6 @@
         display: flex;
         justify-content: center;
         column-gap: 1.75rem;
-        padding: 0;
         color: abstract.$dark-desaturated-cyan;
 
         a {

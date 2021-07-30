@@ -29,7 +29,7 @@
         <label for="toggle">
           <img src="./images/icon-hamburger.svg" alt="" class="hamburger" />
         </label>
-        <nav class="nav">
+        <nav class="nav" aria-labelledby="primary-navigation">
           <ul class="nav__items">
             <li class="nav__item">
               <a class="nav__link" href="#">about</a>
@@ -41,20 +41,22 @@
               <a class="nav__link" href="#">projects</a>
             </li>
             <li class="nav__item">
-              <a class="nav__link button" href="#">contact</a>
+              <a class="nav__link link-button" href="#">contact</a>
             </li>
           </ul>
         </nav>
       </header>
       <div class="hero container">
-        <h1>we are creatives</h1>
+        <h1 class="hero__title">we are creatives</h1>
         <img src="./images/icon-arrow-down.svg" alt="" />
       </div>
     </section>
     <section class="intro intro--transform container">
-      <div class="intro__img">
-        <img src="./images/mobile/image-transform.jpg" alt="" />
-      </div>
+      <img
+        src="./images/mobile/image-transform.jpg"
+        alt=""
+        class="intro__img"
+      />
       <div class="intro__content intro__content--transform">
         <h2 class="intro__title">Transform your brand</h2>
         <p class="intro__text">
@@ -67,10 +69,12 @@
         </div>
       </div>
     </section>
-    <section class="intro intro--stand-out container">
-      <div class="intro__img">
-        <img src="./images/mobile/image-stand-out.jpg" alt="" />
-      </div>
+    <section class="intro intro--stand-out">
+      <img
+        src="./images/mobile/image-stand-out.jpg"
+        alt=""
+        class="intro__img"
+      />
       <div class="intro__content">
         <h2 class="intro__title">Stand out to the right audience</h2>
         <p class="intro__text">
@@ -172,11 +176,19 @@
     </div>
     <footer class="footer">
       <img src="./images/logo-dark.svg" alt="footer - logo" />
-      <ul class="footer__links">
-        <li class="footer__link"><a href="">About</a></li>
-        <li class="footer__link"><a href="">Services</a></li>
-        <li class="footer__link"><a href="">Projects</a></li>
-      </ul>
+      <nav aria-labelledby="footer-navigation" class="footer-nav">
+        <ul class="footer-nav__items">
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">About</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Services</a>
+          </li>
+          <li class="footer-nav__item">
+            <a class="footer-nav__link" href="">Projects</a>
+          </li>
+        </ul>
+      </nav>
 
       <div class="footer__social container">
         <a href="#">

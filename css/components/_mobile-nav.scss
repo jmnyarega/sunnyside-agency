@@ -13,7 +13,6 @@ input {
 
 .nav {
   @media (max-width: 45em) {
-    padding: 2.625rem 2rem;
     width: 80%;
     margin-inline: auto;
     background-color: abstract.$white;
@@ -23,16 +22,15 @@ input {
     right: 0;
     opacity: 0;
     z-index: -1;
-
     transition: top 200ms ease-in-out;
 
     &::before {
       content: "";
       position: absolute;
-      top: -2rem;
+      top: -1.5rem;
       right: 0;
-      border-left: 4rem solid transparent;
-      border-bottom: 4rem solid abstract.$white;
+      border-left: 3rem solid transparent;
+      border-bottom: 3rem solid abstract.$white;
     }
 
     &__link {
@@ -40,26 +38,29 @@ input {
       text-transform: capitalize;
       color: abstract.$dark-grayish-blue;
       font-family: abstract.$ff-default;
-    }
 
-    &__item + &__item {
-      margin-top: 2.625rem;
+      display: block;
+      margin: 2.125rem 0;
     }
 
     &__item {
       text-align: center;
-      .button {
-        font-family: abstract.$ff-alt;
-        text-transform: uppercase;
-        background-color: abstract.$white;
+      .link-button {
         background-color: abstract.$yellow;
-        color: abstract.$very-dark-desaturated-blue;
-        border-radius: 99em;
-        padding: 0.8em 1.5em;
-        font-weight: bold;
+        color: abstract.$dark-blue;
       }
     }
   }
+}
+
+.link-button {
+    text-transform: uppercase;
+    font-family: abstract.$ff-alt;
+    border-radius: 99em;
+    padding: 0.8em 1.5em;
+    width: max-content;
+    margin-inline: auto;
+    font-weight: bold;
 }
 
 #toggle:checked ~ .nav {

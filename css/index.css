@@ -31,6 +31,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  padding: 0;
 }
 
 /* Set core root defaults */
@@ -134,7 +135,7 @@ body {
 .top header {
   width: 80%;
   margin-inline: auto;
-  padding-top: 1.875rem;
+  padding-top: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -145,7 +146,7 @@ body {
   }
 }
 .top .hero {
-  margin-top: 5.875rem;
+  margin-top: 6rem;
   text-align: center;
   color: white;
 }
@@ -154,8 +155,9 @@ body {
     margin-top: 8.375rem;
   }
 }
-.top .hero h1 {
+.top .hero__title {
   font-size: 2.5rem;
+  line-height: 1;
   text-transform: uppercase;
 }
 .top .hero img {
@@ -202,14 +204,15 @@ body {
   }
 }
 .intro__content {
-  margin-block: 4.4375rem 4rem;
-  max-width: 50ch;
-  width: 80%;
+  margin-block: 4.5rem 4rem;
   margin-inline: auto;
+  max-width: 45ch;
+  padding-inline: 1.5rem;
 }
 @media (min-width: 50em) {
   .intro__content {
-    margin-block: 4.4375rem 0;
+    margin-block: 0;
+    padding-inline: 2.5rem;
   }
 }
 .intro__content--transform {
@@ -217,39 +220,34 @@ body {
 }
 .intro__title {
   line-height: 1.2;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
   font-size: 2rem;
+  color: #23303e;
 }
 @media (min-width: 50em) {
   .intro__title {
-    font-size: 1.5rem;
-  }
-}
-@media (min-width: 70em) {
-  .intro__title {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
   }
 }
 .intro__text {
   font-family: "Barlow", Serif;
   color: #818498;
-  font-weight: normal;
   margin-bottom: 2rem;
   font-size: 1.125rem;
 }
-@media (min-width: 50em) {
-  .intro__text {
-    font-size: 1rem;
-  }
-}
-@media (min-width: 68em) {
-  .intro__text {
-    font-size: 1.125rem;
-  }
-}
-.intro__img img {
+.intro__img {
   width: 100%;
+  height: 19.5rem;
   object-fit: cover;
+}
+@media (min-width: 50em) {
+  .intro__img {
+    height: 37.5rem;
+  }
+}
+.intro__cta {
+  color: #23303e;
 }
 @media (min-width: 50em) {
   .intro {
@@ -269,11 +267,11 @@ body {
   position: absolute;
   left: 0;
   right: 0;
-  top: calc(100% - 10rem);
+  top: calc(100% - 12.4375rem);
 }
 .services__title {
   font-size: 1.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.25rem;
   text-transform: capitalize;
 }
 .services__title--graphic-design {
@@ -285,7 +283,7 @@ body {
 .services__text {
   font-family: "Barlow", Serif;
   font-size: 1rem;
-  font-weight: normal;
+  padding-inline: 1.2rem;
   max-width: 45ch;
   margin-inline: auto;
 }
@@ -326,7 +324,7 @@ body {
 }
 
 .testimonial {
-  margin-block: 4rem 5rem;
+  margin-block: 4.9375rem 5.375rem;
   text-align: center;
 }
 .testimonial__title {
@@ -335,19 +333,21 @@ body {
   color: #a7abae;
 }
 .testimonial__item {
-  margin-top: 4rem;
+  margin: 4rem 0;
 }
 .testimonial__img {
   height: 3.5rem;
   border-radius: 50%;
   margin-inline: auto;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2.5625rem;
 }
 .testimonial__text {
   font-family: "Barlow", Serif;
-  color: #19536b;
+  color: #5a636c;
   font-size: 1.125rem;
   font-weight: normal;
+  padding-inline: 1.5rem;
+  margin-bottom: 2.5625rem;
   max-width: 40ch;
   margin-inline: auto;
 }
@@ -359,13 +359,13 @@ body {
   }
 }
 
-.user {
-  margin-top: 2.5rem;
-}
 .user__name {
   color: #23303e;
+  padding-bottom: 0.5rem;
+  font-size: 1.125rem;
 }
 .user__position {
+  font-family: "Barlow", sans-serif;
   font-size: 0.875rem;
   color: #a7abae;
 }
@@ -391,15 +391,17 @@ body {
 }
 .footer img {
   margin-inline: auto;
-  margin-bottom: 2.8125rem;
+  margin-bottom: 2.5625rem;
 }
-.footer__links, .footer ul {
+.footer .footer-nav {
+  margin-bottom: 5.5rem;
+}
+.footer .footer-nav__items {
   display: flex;
   justify-content: center;
   column-gap: 3rem;
-  margin-bottom: 5.375rem;
 }
-.footer__links a, .footer ul a {
+.footer .footer-nav__link {
   color: #458c7e;
   text-decoration: 1px underline dotted;
   outline: none;
@@ -407,14 +409,13 @@ body {
   font-family: "Barlow", Serif;
   transition: all 200ms linear;
 }
-.footer__links a:hover, .footer__links a:focus, .footer ul a:hover, .footer ul a:focus {
+.footer .footer-nav__link:hover, .footer .footer-nav__link:focus {
   color: white;
 }
 .footer__social {
   display: flex;
   justify-content: center;
   column-gap: 1.75rem;
-  padding: 0;
   color: #25564b;
 }
 .footer__social a {
@@ -430,11 +431,11 @@ body {
 }
 
 .btn-link {
-  font-size: 15px;
+  font-size: 0.9375rem;
   padding-inline: 0.5rem;
   text-transform: uppercase;
   text-decoration: none;
-  color: #23303e;
+  color: inherit;
   font-weight: 900;
   position: relative;
   outline: none;
@@ -443,7 +444,6 @@ body {
   content: "";
   position: absolute;
   height: 10px;
-  background-color: black;
   bottom: -0.1rem;
   opacity: 0.25;
   z-index: -1;
@@ -477,7 +477,6 @@ input {
 
 @media (max-width: 45em) {
   .nav {
-    padding: 2.625rem 2rem;
     width: 80%;
     margin-inline: auto;
     background-color: white;
@@ -492,33 +491,36 @@ input {
   .nav::before {
     content: "";
     position: absolute;
-    top: -2rem;
+    top: -1.5rem;
     right: 0;
-    border-left: 4rem solid transparent;
-    border-bottom: 4rem solid white;
+    border-left: 3rem solid transparent;
+    border-bottom: 3rem solid white;
   }
   .nav__link {
     text-decoration: none;
     text-transform: capitalize;
     color: #818498;
     font-family: "Barlow", sans-serif;
-  }
-  .nav__item + .nav__item {
-    margin-top: 2.625rem;
+    display: block;
+    margin: 2.125rem 0;
   }
   .nav__item {
     text-align: center;
   }
-  .nav__item .button {
-    font-family: "Fraunces", serif;
-    text-transform: uppercase;
-    background-color: white;
+  .nav__item .link-button {
     background-color: #fad400;
-    color: #23303e;
-    border-radius: 99em;
-    padding: 0.8em 1.5em;
-    font-weight: bold;
+    color: #19536b;
   }
+}
+
+.link-button {
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  border-radius: 99em;
+  padding: 0.8em 1.5em;
+  width: max-content;
+  margin-inline: auto;
+  font-weight: bold;
 }
 
 #toggle:checked ~ .nav {
@@ -564,23 +566,19 @@ input {
     height: 1.5px;
     transition: all 250ms linear;
   }
-  .nav__link:not(.button):hover::after, .nav__link:not(.button):focus::after, .nav__link:not(.button):hover, .nav__link:not(.button):focus {
+  .nav__link:not(.link-button):hover::after, .nav__link:not(.link-button):focus::after, .nav__link:not(.link-button):hover, .nav__link:not(.link-button):focus {
     left: 0;
     right: 0;
     opacity: 0.8;
   }
-  .nav__item .button {
-    text-transform: uppercase;
-    font-family: "Fraunces", serif;
+  .nav__item .link-button {
     background-color: white;
     color: black;
-    border-radius: 99em;
     padding: 1.13em 2em;
-    font-weight: bold;
     font-size: 0.9375rem;
     transition: all 350ms linear;
   }
-  .nav__item .button:hover, .nav__item .button:focus {
+  .nav__item .link-button:hover, .nav__item .link-button:focus {
     background-color: #78CEF5;
     color: white;
   }

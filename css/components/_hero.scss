@@ -33,7 +33,7 @@
     header {
         width: 80%;
         margin-inline: auto;
-        padding-top: 1.875rem;
+        padding-top: 2rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -43,14 +43,15 @@
     }
 
     .hero {
-        margin-top: 5.875rem;
+        margin-top: 6rem;
         text-align: center;
         color: abstract.$white;
         @media (min-width: 50em) {
             margin-top: 8.375rem;
         }
-        h1 {
+        &__title {
             font-size: 2.5rem;
+            line-height: 1;
             text-transform: uppercase;
         }
 

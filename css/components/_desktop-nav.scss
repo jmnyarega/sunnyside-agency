@@ -37,7 +37,7 @@
         transition: all 250ms linear;
       }
 
-      &:not(.button) {
+      &:not(.link-button) {
         &:hover::after,
         &:focus::after,
         &:hover,
@@ -50,14 +50,10 @@
     }
 
     &__item {
-      .button {
-        text-transform: uppercase;
-        font-family: abstract.$ff-alt;
+      .link-button {
         background-color: abstract.$white;
         color: abstract.$black;
-        border-radius: 99em;
         padding: 1.13em 2em;
-        font-weight: bold;
         font-size: 0.9375rem;
         transition: all 350ms linear;
 

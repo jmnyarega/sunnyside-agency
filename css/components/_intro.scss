@@ -8,12 +8,14 @@
         text-align: initial;
     }
     &__content {
-        margin-block: 4.4375rem 4rem;
-        max-width: 50ch;
-        width: 80%;
+        margin-block: 4.5rem 4rem;
         margin-inline: auto;
+        max-width: 45ch;
+        padding-inline: 1.5rem;
+
         @media (min-width: 50em) {
-            margin-block: 4.4375rem 0;
+            margin-block: 0;
+            padding-inline: 2.5rem;
         }
     }
 
@@ -23,35 +25,33 @@
 
     &__title {
         line-height: 1.2;
-        margin-bottom: 2rem;
+        margin-bottom: 2.5rem;
         font-size: 2rem;
+        color: abstract.$very-dark-desaturated-blue;
         @media (min-width: 50em) {
-            font-size: 1.5rem;
-        }
-        @media (min-width: 70em) {
-            font-size: 2rem;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
         }
     }
 
     &__text {
         font-family: "Barlow", Serif;
         color: abstract.$dark-grayish-blue;
-        font-weight: normal;
         margin-bottom: 2rem;
         font-size: 1.125rem;
-        @media (min-width: 50em) {
-            font-size: 1rem;
-        }
-        @media (min-width: 68em) {
-            font-size: 1.125rem;
-        }
     }
 
     &__img {
-        img {
-            width: 100%;
-            object-fit: cover;
+        width: 100%;
+        height: 19.5rem;
+        object-fit: cover;
+        @media (min-width: 50em) {
+            height: 37.5rem;
         }
+    }
+
+    &__cta {
+        color: abstract.$very-dark-desaturated-blue;
     }
 
     @media (min-width: 50em) {
