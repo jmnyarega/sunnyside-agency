@@ -95,13 +95,14 @@ body {
 }
 
 .container {
-  max-width: 90em;
+  max-width: 120em;
   width: 100%;
   margin-inline: auto;
 }
 .top {
   position: relative;
   background: no-repeat url(../images/mobile/image-header.jpg);
+  background-color: #3ebfff;
   background-size: cover;
   background-position: bottom center;
   min-height: 33.625rem;
