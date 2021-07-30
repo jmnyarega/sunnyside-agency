@@ -2,13 +2,17 @@
 
 .btn-link {
   font-size: 0.9375rem;
-  padding-inline: 0.5rem;
+  font-family: abstract.$ff-default;
   text-transform: uppercase;
   text-decoration: none;
-  color: inherit;
   font-weight: 900;
+  color: inherit;
+
+  padding-inline: 0.5rem;
   position: relative;
   outline: none;
+
+  transition: all 200ms linear;
 
   &::after {
     content: "";

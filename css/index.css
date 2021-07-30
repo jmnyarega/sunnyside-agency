@@ -348,8 +348,13 @@ body {
   font-weight: normal;
   padding-inline: 1.5rem;
   margin-bottom: 2.5625rem;
-  max-width: 40ch;
   margin-inline: auto;
+  max-width: 40ch;
+}
+@media (min-width: 50em) {
+  .testimonial__text {
+    padding-inline: 2.5rem;
+  }
 }
 @media (min-width: 50em) {
   .testimonial__items {
@@ -432,13 +437,15 @@ body {
 
 .btn-link {
   font-size: 0.9375rem;
-  padding-inline: 0.5rem;
+  font-family: "Barlow", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  color: inherit;
   font-weight: 900;
+  color: inherit;
+  padding-inline: 0.5rem;
   position: relative;
   outline: none;
+  transition: all 200ms linear;
 }
 .btn-link::after {
   content: "";
@@ -498,7 +505,6 @@ input {
   }
   .nav__link {
     text-decoration: none;
-    text-transform: capitalize;
     color: #818498;
     font-family: "Barlow", sans-serif;
     display: block;
@@ -507,20 +513,16 @@ input {
   .nav__item {
     text-align: center;
   }
-  .nav__item .link-button {
+  .nav__button a {
     background-color: #fad400;
-    color: #19536b;
+    color: #052d3d;
+    font-weight: normal;
+    padding: 0.8em 1.5em;
+    width: max-content;
+    border-radius: 99em;
+    margin-inline: auto;
+    font-family: "Fraunces", serif;
   }
-}
-
-.link-button {
-  text-transform: uppercase;
-  font-family: "Fraunces", serif;
-  border-radius: 99em;
-  padding: 0.8em 1.5em;
-  width: max-content;
-  margin-inline: auto;
-  font-weight: bold;
 }
 
 #toggle:checked ~ .nav {
@@ -543,6 +545,7 @@ input {
   .nav {
     all: unset;
     font-size: 1.125rem;
+    font-family: "Barlow", sans-serif;
   }
   .nav__items {
     display: flex;
@@ -551,9 +554,7 @@ input {
   .nav__link {
     text-decoration: none;
     outline: none;
-    text-transform: capitalize;
     color: white;
-    font-family: "Barlow", sans-serif;
     position: relative;
   }
   .nav__link::after {
@@ -566,19 +567,22 @@ input {
     height: 1.5px;
     transition: all 250ms linear;
   }
-  .nav__link:not(.link-button):hover::after, .nav__link:not(.link-button):focus::after, .nav__link:not(.link-button):hover, .nav__link:not(.link-button):focus {
+  .nav__link:not(.btn-link):hover::after, .nav__link:not(.btn-link):focus::after, .nav__link:not(.btn-link):hover, .nav__link:not(.btn-link):focus {
     left: 0;
     right: 0;
     opacity: 0.8;
   }
-  .nav__item .link-button {
+  .nav__button a {
     background-color: white;
-    color: black;
+    color: #23303e;
+    font-weight: normal;
     padding: 1.13em 2em;
-    font-size: 0.9375rem;
-    transition: all 350ms linear;
+    width: max-content;
+    border-radius: 99em;
+    margin-inline: auto;
+    font-family: "Fraunces", serif;
   }
-  .nav__item .link-button:hover, .nav__item .link-button:focus {
+  .nav__button a:hover, .nav__button a:focus {
     background-color: #78CEF5;
     color: white;
   }

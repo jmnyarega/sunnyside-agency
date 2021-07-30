@@ -10,6 +10,7 @@
   @media (min-width: 45em) {
     all: unset;
     font-size: 1.125rem;
+    font-family: abstract.$ff-default;
 
 
     &__items {
@@ -20,9 +21,7 @@
     &__link {
       text-decoration: none;
       outline: none;
-      text-transform: capitalize;
       color: abstract.$white;
-      font-family: abstract.$ff-default;
       position: relative;
 
       &::after {
@@ -37,7 +36,7 @@
         transition: all 250ms linear;
       }
 
-      &:not(.link-button) {
+      &:not(.btn-link) {
         &:hover::after,
         &:focus::after,
         &:hover,
@@ -49,18 +48,20 @@
       }
     }
 
-    &__item {
-      .link-button {
-        background-color: abstract.$white;
-        color: abstract.$black;
-        padding: 1.13em 2em;
-        font-size: 0.9375rem;
-        transition: all 350ms linear;
+    &__button a {
+      background-color: abstract.$white;
+      color: abstract.$very-dark-desaturated-blue;
+      font-weight: normal;
 
-        &:hover, &:focus {
-          background-color: #78CEF5;
-          color: abstract.$white;
-        }
+      padding: 1.13em 2em;
+      width: max-content;
+      border-radius: 99em;
+      margin-inline: auto;
+      font-family: abstract.$ff-alt;
+
+      &:hover, &:focus {
+        background-color: abstract.$light-blue;
+        color: abstract.$white;
       }
     }
   }
