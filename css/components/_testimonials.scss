@@ -11,18 +11,18 @@
     }
 
     &__item {
-        margin: 4rem 0;
+        margin-block: 4rem;
     }
 
     &__img {
-        height: 3.5rem;
+        height: 4.5rem;
         border-radius: 50%;
         margin-inline: auto;
         margin-bottom: 2.5625rem;
     }
 
     &__text {
-        font-family: "Barlow", Serif;
+        font-family: abstract.$ff-default;
         color: abstract.$very-dark-grayish-blue;
         font-size: 1.125rem;
         font-weight: normal;

@@ -5,6 +5,39 @@
     transition: all 350ms linear;
     position: relative;
 
+    &--graphic-design, &--photography {
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        position: relative;
+        min-height: 37.5rem;
+    }
+
+    &--graphic-design {
+        background-image: url(../images/mobile/image-graphic-design.jpg);
+
+        @media (min-width: 45em) {
+            background-image: url(../images/desktop/image-graphic-design.jpg);
+        }
+
+        @media (min-width: 100em) {
+            min-height: 40rem;
+        }
+    }
+
+    &--photography {
+        background-image: url(../images/mobile/image-photography.jpg);
+
+        @media (min-width: 45em) {
+            background-image: url(../images/desktop/image-photography.jpg);
+        }
+    }
+
+    @media (min-width: 40em) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     &__content {
         position: absolute;
         left: 0;
@@ -27,7 +60,7 @@
     }
 
     &__text {
-        font-family: "Barlow", Serif;
+        font-family: abstract.$ff-default;
         font-size: 1rem;
         padding-inline: 1.2rem;
         max-width: 45ch;
@@ -40,34 +73,5 @@
         &--photography {
             color: abstract.$dark-blue;
         }
-    }
-
-    &--graphic-design, &--photography {
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: top center;
-        position: relative;
-        min-height: 37.5rem;
-    }
-
-    &--graphic-design {
-        background-image: url(../images/mobile/image-graphic-design.jpg);
-
-        @media (min-width: 45em) {
-            background-image: url(../images/desktop/image-graphic-design.jpg);
-        }
-    }
-
-    &--photography {
-        background-image: url(../images/mobile/image-photography.jpg);
-
-        @media (min-width: 45em) {
-            background-image: url(../images/desktop/image-photography.jpg);
-        }
-    }
-
-    @media (min-width: 40em) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
     }
 }

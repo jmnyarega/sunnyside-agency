@@ -89,7 +89,6 @@ img:not([alt]) {
 body {
   min-height: 100vh;
   font-size: 1.25rem;
-  font-family: "Barlow", sans-serif;
   font-family: "Fraunces", serif;
   background-color: #fffcfa;
 }
@@ -99,6 +98,7 @@ body {
   width: 100%;
   margin-inline: auto;
 }
+
 .top {
   position: relative;
   background: no-repeat url(../images/mobile/image-header.jpg);
@@ -162,35 +162,35 @@ body {
   line-height: 1;
   text-transform: uppercase;
 }
-.top .hero img {
+.top .hero__arrow {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   bottom: 8.5rem;
 }
 @media (min-width: 23em) {
-  .top .hero img {
+  .top .hero__arrow {
     bottom: 10.125rem;
   }
 }
 @media (min-width: 30em) {
-  .top .hero img {
+  .top .hero__arrow {
     bottom: 14.875rem;
   }
 }
 @media (min-width: 40em) {
-  .top .hero img {
+  .top .hero__arrow {
     bottom: 15.875rem;
     min-height: 12rem;
   }
 }
 @media (min-width: 50em) {
-  .top .hero img {
+  .top .hero__arrow {
     min-height: 13rem;
   }
 }
 @media (min-width: 60em) {
-  .top .hero img {
+  .top .hero__arrow {
     bottom: 20.875rem;
     min-height: 15rem;
   }
@@ -208,8 +208,8 @@ body {
 .intro__content {
   margin-block: 4.5rem 4rem;
   margin-inline: auto;
-  max-width: 45ch;
   padding-inline: 1.5rem;
+  max-width: 45ch;
 }
 @media (min-width: 50em) {
   .intro__content {
@@ -233,7 +233,7 @@ body {
   }
 }
 .intro__text {
-  font-family: "Barlow", Serif;
+  font-family: "Barlow", sans-serif;
   color: #818498;
   margin-bottom: 2rem;
   font-size: 1.125rem;
@@ -265,6 +265,40 @@ body {
   transition: all 350ms linear;
   position: relative;
 }
+.services--graphic-design, .services--photography {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  min-height: 37.5rem;
+}
+.services--graphic-design {
+  background-image: url(../images/mobile/image-graphic-design.jpg);
+}
+@media (min-width: 45em) {
+  .services--graphic-design {
+    background-image: url(../images/desktop/image-graphic-design.jpg);
+  }
+}
+@media (min-width: 100em) {
+  .services--graphic-design {
+    min-height: 40rem;
+  }
+}
+.services--photography {
+  background-image: url(../images/mobile/image-photography.jpg);
+}
+@media (min-width: 45em) {
+  .services--photography {
+    background-image: url(../images/desktop/image-photography.jpg);
+  }
+}
+@media (min-width: 40em) {
+  .services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .services__content {
   position: absolute;
   left: 0;
@@ -283,7 +317,7 @@ body {
   color: #052d3d;
 }
 .services__text {
-  font-family: "Barlow", Serif;
+  font-family: "Barlow", sans-serif;
   font-size: 1rem;
   padding-inline: 1.2rem;
   max-width: 45ch;
@@ -294,35 +328,6 @@ body {
 }
 .services__text--photography {
   color: #19536b;
-}
-.services--graphic-design, .services--photography {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: top center;
-  position: relative;
-  min-height: 37.5rem;
-}
-.services--graphic-design {
-  background-image: url(../images/mobile/image-graphic-design.jpg);
-}
-@media (min-width: 45em) {
-  .services--graphic-design {
-    background-image: url(../images/desktop/image-graphic-design.jpg);
-  }
-}
-.services--photography {
-  background-image: url(../images/mobile/image-photography.jpg);
-}
-@media (min-width: 45em) {
-  .services--photography {
-    background-image: url(../images/desktop/image-photography.jpg);
-  }
-}
-@media (min-width: 40em) {
-  .services {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 .testimonial {
@@ -335,16 +340,16 @@ body {
   color: #a7abae;
 }
 .testimonial__item {
-  margin: 4rem 0;
+  margin-block: 4rem;
 }
 .testimonial__img {
-  height: 3.5rem;
+  height: 4.5rem;
   border-radius: 50%;
   margin-inline: auto;
   margin-bottom: 2.5625rem;
 }
 .testimonial__text {
-  font-family: "Barlow", Serif;
+  font-family: "Barlow", sans-serif;
   color: #5a636c;
   font-size: 1.125rem;
   font-weight: normal;
@@ -378,9 +383,14 @@ body {
 }
 
 .gallery {
-  margin-top: 5.375rem;
+  margin-top: 5.625rem;
   display: grid;
   grid-template-areas: "a b" "c d";
+}
+@media (min-width: 50em) {
+  .gallery {
+    margin-top: 9.875rem;
+  }
 }
 .gallery img {
   width: 100%;
@@ -394,13 +404,18 @@ body {
 }
 @media (min-width: 50em) {
   .gallery {
-    grid-template-areas: "a b c d";
+    grid-template-areas: "a c c d";
   }
 }
 
 .footer {
-  padding-block: 4rem;
+  padding-block: 4rem 5rem;
   background-color: #91d4c7;
+}
+@media (min-width: 50em) {
+  .footer {
+    padding-block: 4.5rem;
+  }
 }
 .footer img {
   margin-inline: auto;

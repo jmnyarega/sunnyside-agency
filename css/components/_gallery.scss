@@ -1,8 +1,12 @@
 .gallery {
-    margin-top: 5.375rem;
+    margin-top: 5.625rem;
     display: grid;
     grid-template-areas: "a b"
                           "c d";
+
+    @media (min-width: 50em) {
+        margin-top: 9.875rem;
+    }
 
     img {
         width: 100%;
@@ -13,6 +17,6 @@
         }
     }
     @media (min-width: 50em) {
-       grid-template-areas: "a b c d";
+       grid-template-areas: "a c c d";
     }
 }

@@ -3,7 +3,6 @@
 body {
     min-height: 100vh;
     font-size: 1.25rem;
-    font-family: abstract.$ff-default;
     font-family: abstract.$ff-alt;
     background-color: abstract.$very-light-gray;
 }
@@ -12,8 +11,4 @@ body {
     max-width: 120em;
     width: 100%;
     margin-inline: auto;
-
-    @media (min-width: 60em) {
-        // width: 80%;
-    }
 }

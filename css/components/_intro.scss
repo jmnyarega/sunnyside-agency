@@ -10,8 +10,8 @@
     &__content {
         margin-block: 4.5rem 4rem;
         margin-inline: auto;
-        max-width: 45ch;
         padding-inline: 1.5rem;
+        max-width: 45ch;
 
         @media (min-width: 50em) {
             margin-block: 0;
@@ -35,7 +35,7 @@
     }
 
     &__text {
-        font-family: "Barlow", Serif;
+        font-family: abstract.$ff-default;
         color: abstract.$dark-grayish-blue;
         margin-bottom: 2rem;
         font-size: 1.125rem;

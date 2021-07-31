@@ -1,8 +1,12 @@
 @use 'abstract';
 
 .footer {
-    padding-block: 4rem;
+    padding-block: 4rem 5rem;
     background-color: abstract.$moderate-cyan;
+
+    @media (min-width: 50em) {
+        padding-block: 4.5rem;
+    }
 
     img {
         margin-inline: auto;

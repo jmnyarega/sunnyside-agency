@@ -30,6 +30,7 @@
           <span class="two"></span>
           <span class="three"></span>
         </label>
+        <!-- Since we have multiple nav containers, this will be read as primary navigation by the screen reader -->
         <nav class="nav" aria-labelledby="primary-navigation">
           <ul class="nav__items">
             <li class="nav__item">
@@ -49,10 +50,12 @@
       </header>
       <div class="hero container">
         <h1 class="hero__title">we are creatives</h1>
-        <img src="./images/icon-arrow-down.svg" alt="" />
+        <!-- This will be ignored by the screen reader -->
+        <img src="./images/icon-arrow-down.svg" alt="" class="hero__arrow" />
       </div>
     </section>
     <section class="intro intro--transform container">
+      <!-- This will be ignored by the screen reader - It is for decorative purposes -->
       <img
         src="./images/mobile/image-transform.jpg"
         alt=""
@@ -72,6 +75,7 @@
       </div>
     </section>
     <section class="intro intro--stand-out container">
+      <!-- This will be ignored by the screen reader - It is for decorative purposes -->
       <img
         src="./images/mobile/image-stand-out.jpg"
         alt=""
@@ -125,10 +129,13 @@
             class="testimonial__img"
             loading="lazy"
           />
+          <!-- 'loading="lazy"' Means the image will be loaded when the user scrolls to this component -->
           <p class="testimonial__text">
             We put our trust in Sunnyside and they delivered, making sure our
             needs were met and deadlines were always hit.
           </p>
+          <!-- This(user) is an independ block inside the testimonial block, nesting will not be a good idea. Separating
+              blocks from elements make components easy to re-use. -->
           <div class="user">
             <h4 class="user__name">Emily R.</h4>
             <p class="user__position">Managing Director</p>
