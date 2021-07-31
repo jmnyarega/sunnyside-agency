@@ -1,14 +1,10 @@
 @use 'abstract';
 
-.hamburger {
-  cursor: pointer;
-  @media (max-width: 45em) {
-    display: block;
-  }
-}
 
-input {
-  display: none;
+header {
+  input {
+    display: none;
+  }
 }
 
 .nav {
@@ -67,6 +63,6 @@ input {
   top: 20%;
 }
 
-#toggle:checked + label .hamburger {
+#toggle:checked + label .ham {
   opacity: 0.6;
 }

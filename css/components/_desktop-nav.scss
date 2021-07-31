@@ -1,11 +1,5 @@
 @use 'abstract';
 
-.hamburger {
-  @media (min-width: 45em) {
-    display: none;
-  }
-}
-
 .nav {
   @media (min-width: 45em) {
     all: unset;
