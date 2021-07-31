@@ -1,0 +1,39 @@
+@use 'abstract';
+
+.ham {
+  transition: all 350ms linear;
+  color: currentcolor;
+  cursor: pointer;
+  @media (max-width: 45em) {
+    display: block;
+  }
+
+  @media (min-width: 45em) {
+    display: none;
+  }
+
+  span {
+    display: block;
+    height: 0.2rem;
+    width: 3rem;
+    background-color: abstract.$white;
+    margin: 0.8rem auto;
+    transition: all 350ms linear;
+  }
+}
+
+#toggle:checked ~ .nav {
+  opacity: 1;
+}
+
+#toggle:checked ~ .ham .one {
+  transform: translateY(1rem) rotateZ(45deg);
+}
+
+#toggle:checked ~ .ham .three {
+  transform: translateY(-1rem) rotateZ(-45deg);
+}
+
+#toggle:checked ~ .ham .two {
+  width: 0;
+}
