@@ -32,7 +32,7 @@
         </label>
         <!-- Since we have multiple nav containers, this will be read as primary navigation by the screen reader -->
         <nav class="nav" aria-labelledby="primary-navigation">
-          <ul class="nav__items">
+          <ul class="nav__items" id="primary-navigation">
             <li class="nav__item">
               <a class="nav__link" href="#">About</a>
             </li>
@@ -54,153 +54,155 @@
         <img src="./images/icon-arrow-down.svg" alt="" class="hero__arrow" />
       </div>
     </section>
-    <section class="intro intro--transform container">
-      <!-- This will be ignored by the screen reader - It is for decorative purposes -->
-      <img
-        src="./images/mobile/image-transform.jpg"
-        alt=""
-        class="intro__img"
-        loading="lazy"
-      />
-      <div class="intro__content intro__content--transform">
-        <h2 class="intro__title">Transform your brand</h2>
-        <p class="intro__text">
-          We are creatives Transform your brand We are a full-service creative
-          agency specializing in helping brands grow fast. Engage your clients
-          through compelling visuals that do most of the marketing for you.
-        </p>
-        <div class="intro__cta">
-          <a href="#" class="btn-link btn-link--yellow">learn more</a>
-        </div>
-      </div>
-    </section>
-    <section class="intro intro--stand-out container">
-      <!-- This will be ignored by the screen reader - It is for decorative purposes -->
-      <img
-        src="./images/mobile/image-stand-out.jpg"
-        alt=""
-        class="intro__img"
-        loading="lazy"
-      />
-      <div class="intro__content">
-        <h2 class="intro__title">Stand out to the right audience</h2>
-        <p class="intro__text">
-          Using a collaborative formula of designers, researchers,
-          photographers, videographers, and copywriters, we’ll build and extend
-          your brand in digital places.
-        </p>
-        <div class="intro__cta">
-          <a href="#" class="btn-link btn-link--pink">learn more</a>
-        </div>
-      </div>
-    </section>
-    <div class="services container">
-      <section class="services--graphic-design">
-        <div class="services__content">
-          <h2 class="services__title services__title--graphic-design">
-            Graphic Design
-          </h2>
-          <p class="services__text services__text--graphic-design">
-            Great design makes you memorable. We deliver artwork that
-            underscores your brand message and captures potential clients’
-            attention.
+    <main>
+      <section class="intro intro--transform container">
+        <!-- This will be ignored by the screen reader - It is for decorative purposes -->
+        <img
+          src="./images/mobile/image-transform.jpg"
+          alt=""
+          class="intro__img"
+          loading="lazy"
+        />
+        <div class="intro__content intro__content--transform">
+          <h2 class="intro__title">Transform your brand</h2>
+          <p class="intro__text">
+            We are creatives Transform your brand We are a full-service creative
+            agency specializing in helping brands grow fast. Engage your clients
+            through compelling visuals that do most of the marketing for you.
           </p>
+          <div class="intro__cta">
+            <a href="#" class="btn-link btn-link--yellow">learn more</a>
+          </div>
         </div>
       </section>
-      <section class="services--photography">
-        <div class="services__content">
-          <h2 class="services__title services__title--photography">
-            photography
-          </h2>
-          <p class="services__text services__text--photography">
-            Increase your credibility by getting the most stunning, high-quality
-            photos that improve your business image.
+      <section class="intro intro--stand-out container">
+        <!-- This will be ignored by the screen reader - It is for decorative purposes -->
+        <img
+          src="./images/mobile/image-stand-out.jpg"
+          alt=""
+          class="intro__img"
+          loading="lazy"
+        />
+        <div class="intro__content">
+          <h2 class="intro__title">Stand out to the right audience</h2>
+          <p class="intro__text">
+            Using a collaborative formula of designers, researchers,
+            photographers, videographers, and copywriters, we’ll build and
+            extend your brand in digital places.
           </p>
+          <div class="intro__cta">
+            <a href="#" class="btn-link btn-link--pink">learn more</a>
+          </div>
         </div>
       </section>
-    </div>
-    <section class="testimonial container">
-      <h3 class="testimonial__title">client testimonials</h3>
-      <ul class="testimonial__items">
-        <li class="testimonial__item">
-          <img
-            src="./images/image-emily.jpg"
-            alt="Emily"
-            class="testimonial__img"
-            loading="lazy"
-          />
-          <!-- 'loading="lazy"' Means the image will be loaded when the user scrolls to this component -->
-          <p class="testimonial__text">
-            We put our trust in Sunnyside and they delivered, making sure our
-            needs were met and deadlines were always hit.
-          </p>
-          <!-- This(user) is an independ block inside the testimonial block, nesting will not be a good idea. Separating
+      <div class="services container">
+        <section class="services--graphic-design">
+          <div class="services__content">
+            <h2 class="services__title services__title--graphic-design">
+              Graphic Design
+            </h2>
+            <p class="services__text services__text--graphic-design">
+              Great design makes you memorable. We deliver artwork that
+              underscores your brand message and captures potential clients’
+              attention.
+            </p>
+          </div>
+        </section>
+        <section class="services--photography">
+          <div class="services__content">
+            <h2 class="services__title services__title--photography">
+              photography
+            </h2>
+            <p class="services__text services__text--photography">
+              Increase your credibility by getting the most stunning,
+              high-quality photos that improve your business image.
+            </p>
+          </div>
+        </section>
+      </div>
+      <section class="testimonial container">
+        <h3 class="testimonial__title">client testimonials</h3>
+        <ul class="testimonial__items">
+          <li class="testimonial__item">
+            <img
+              src="./images/image-emily.jpg"
+              alt="Emily"
+              class="testimonial__img"
+              loading="lazy"
+            />
+            <!-- 'loading="lazy"' Means the image will be loaded when the user scrolls to this component -->
+            <p class="testimonial__text">
+              We put our trust in Sunnyside and they delivered, making sure our
+              needs were met and deadlines were always hit.
+            </p>
+            <!-- This(user) is an independ block inside the testimonial block, nesting will not be a good idea. Separating
               blocks from elements make components easy to re-use. -->
-          <div class="user">
-            <h4 class="user__name">Emily R.</h4>
-            <p class="user__position">Managing Director</p>
-          </div>
-        </li>
-        <li class="testimonial__item">
-          <img
-            src="./images/image-thomas.jpg"
-            alt="Thomas"
-            class="testimonial__img"
-            loading="lazy"
-          />
-          <p class="testimonial__text">
-            Sunnyside’s enthusiasm coupled with their keen interest in our
-            brand’s success made it a satisfying and enjoyable experience.
-          </p>
-          <div class="user">
-            <h4 class="user__name">Thomas S.</h4>
-            <p class="user__position">Chief Operating Officer</p>
-          </div>
-        </li>
-        <li class="testimonial">
-          <img
-            src="./images/image-jennie.jpg"
-            alt="Jennie"
-            class="testimonial__img"
-            loading="lazy"
-          />
-          <p class="testimonial__text">
-            Incredible end result! Our sales increased over 400% when we worked
-            with Sunnyside. Highly recommended!
-          </p>
-          <div class="user">
-            <h4 class="user__name">Jennie F.</h4>
-            <p class="user__position">Business Owner</p>
-          </div>
-        </li>
-      </ul>
-    </section>
-    <div class="gallery">
-      <img
-        src="./images/mobile/image-gallery-milkbottles.jpg"
-        alt="milk-bottles"
-        loading="lazy"
-      />
-      <img
-        src="./images/mobile/image-gallery-orange.jpg"
-        alt="orange"
-        loading="lazy"
-      />
-      <img
-        src="./images/mobile/image-gallery-cone.jpg"
-        alt="cone"
-        loading="lazy"
-      />
-      <img
-        src="./images/mobile/image-gallery-sugar-cubes.jpg"
-        alt="sugar cubes"
-        loading="lazy"
-      />
-    </div>
+            <div class="user">
+              <h4 class="user__name">Emily R.</h4>
+              <p class="user__position">Managing Director</p>
+            </div>
+          </li>
+          <li class="testimonial__item">
+            <img
+              src="./images/image-thomas.jpg"
+              alt="Thomas"
+              class="testimonial__img"
+              loading="lazy"
+            />
+            <p class="testimonial__text">
+              Sunnyside’s enthusiasm coupled with their keen interest in our
+              brand’s success made it a satisfying and enjoyable experience.
+            </p>
+            <div class="user">
+              <h4 class="user__name">Thomas S.</h4>
+              <p class="user__position">Chief Operating Officer</p>
+            </div>
+          </li>
+          <li class="testimonial">
+            <img
+              src="./images/image-jennie.jpg"
+              alt="Jennie"
+              class="testimonial__img"
+              loading="lazy"
+            />
+            <p class="testimonial__text">
+              Incredible end result! Our sales increased over 400% when we
+              worked with Sunnyside. Highly recommended!
+            </p>
+            <div class="user">
+              <h4 class="user__name">Jennie F.</h4>
+              <p class="user__position">Business Owner</p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="gallery">
+        <img
+          src="./images/mobile/image-gallery-milkbottles.jpg"
+          alt="milk-bottles"
+          loading="lazy"
+        />
+        <img
+          src="./images/mobile/image-gallery-orange.jpg"
+          alt="orange"
+          loading="lazy"
+        />
+        <img
+          src="./images/mobile/image-gallery-cone.jpg"
+          alt="cone"
+          loading="lazy"
+        />
+        <img
+          src="./images/mobile/image-gallery-sugar-cubes.jpg"
+          alt="sugar cubes"
+          loading="lazy"
+        />
+      </section>
+    </main>
     <footer class="footer">
       <img src="./images/logo-dark.svg" alt="footer - logo" loading="lazy" />
       <nav aria-labelledby="footer-navigation" class="footer-nav">
-        <ul class="footer-nav__items">
+        <ul class="footer-nav__items" id="footer-navigation">
           <li class="footer-nav__item">
             <a class="footer-nav__link" href="">About</a>
           </li>
@@ -214,19 +216,10 @@
       </nav>
 
       <div class="footer__social container">
-        <a href="#">
-          <span class="fa fa-facebook-square"></span>
-        </a>
-
-        <a href="#">
-          <span class="fa fa-twitter"></span>
-        </a>
-        <a href="#">
-          <span class="fa fa-instagram"></span>
-        </a>
-        <a href="#">
-          <span class="fa fa-pinterest"></span>
-        </a>
+        <span class="fa fa-facebook-square"></span>
+        <span class="fa fa-twitter"></span>
+        <span class="fa fa-instagram"></span>
+        <span class="fa fa-pinterest"></span>
       </div>
     </footer>
     <script src="https://use.fontawesome.com/4ac2e5dc4b.js"></script>

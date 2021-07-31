@@ -41,15 +41,13 @@
         column-gap: 1.75rem;
         color: abstract.$dark-desaturated-cyan;
 
-        a {
-            text-decoration: none;
-            outline: none;
+        span {
             width: 1.25rem;
             cursor: pointer;
             transition: all 200ms linear;
             color: abstract.$dark-moderate-cyan;
 
-            &:hover, &:focus {
+            &:hover {
                 color: abstract.$white;
             }
         }
